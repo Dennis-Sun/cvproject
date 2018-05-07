@@ -10,13 +10,13 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 
 ## Results
-1. Aspect ratio change
+### 1. Aspect ratio change
 
 ![Original Input](Images/christmas_original.jpg "Original Input")
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
 
-2. Retargeting with Optimal Seams-Order
+### 2. Retargeting with Optimal Seams-Order
 
 ![Original Input](Images/charles_original.png)
 
@@ -25,32 +25,33 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ![(C) Alternate between horizontal and vertical seams](Images/charles_rm100rows_100cols_altern.png)
 ![(D) Optimal order retargeting](Images/charles_optimal_100cols100rows.png)
 
-3. Image Enlarging
+### 3. Image Enlarging
 
 ![Original Input](Images/desert.jpg)
 ![Original Input with vertial seams](Images/desert_add_50percentcols_Vseams.png)
 ![Seam Carving](Images/desert_add_50percentcols.png)
 
-4. Content Amplification
+### 4. Content Amplification
 
 ![Original Input](Images/arch_original.png)
 ![Resizing](Images/arch_magnified.png)
 ![Seam Carving](Images/arch_retarget.png)
 
-5. Object Removal
+### 5. Object Removal
 
 ![Original Input](Images/Couple.png)
 ![Mask](Images/Couple_protect_mask.png)
 ![Object Removed](Images/Couple_objrm.png)
 
-6. Object Removal and Resize
+### 6. Object Removal and Resize
 
 ![Original Input](Images/Beach.png)
 ![Girl Removed](Images/Beach_girl_removed.png)
 ![Girl Removed and Resized](Images/Beach_girl_removed_resized.png)
 
 
-7. Forward Energy vs Backward Energy
+### 7. Forward Energy vs Backward Energy
+
 The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searchs for the seam whose removal inserts the minimal amount of energy into the image. 
 ![Forward Energy](Images/ForwardEnerge.png)
 
@@ -67,4 +68,7 @@ Here is an comparison between the original seam carving backward energy (middle)
 ![ForWard Energy](Images/bench_rm2_fe.png)
 
 
-8. Simple Video Seam Carving
+### 8. Simple Video Seam Carving
+
+
+## Discussion
