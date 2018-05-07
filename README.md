@@ -27,7 +27,15 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 3. Image Enlarging
 
+![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert.jpg)
+![Original Input with vertial seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert_add_50percentcols_Vseams.png)
+![Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert_add_50percentcols.png)
+
 4. Content Amplification
+
+![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_original.png)
+![Resizing](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_magnified.png)
+![Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_retarget.png)
 
 5. Object Removal
 
