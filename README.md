@@ -33,7 +33,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 ## Results
 ### 1. Aspect ratio change
 We can successfully apply the algorithm to reduce the width of an image to a target size. Figure 1 shows the result of reducing the width of the image by 100 pixels.
-
+<dl>
 <div class="image123">
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_original.jpg" height="200" width="150"  />
@@ -48,7 +48,7 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
         <p style="text-align:right;">(c)Seam Carving</p>
     </div>
 </div>
-
+</dl>
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter.
