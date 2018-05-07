@@ -50,9 +50,8 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 </div>
 
 ### 2. Retargeting with Optimal Seams-Order
-
-![Original Input](Images/charles_original.png)
-
+When we try to fit the image to a new size, the order of removing seams may matter.
+![](Images/charles_original.png "Original Input")
 ![(A) Remove horizontal seams first and then remove vertical seams](Images/charles_rm100rows_rm100cols.png)
 ![(B) Remove vertical seams first and then remove horizontal seams](Images/charles_rm100cols_rm100rows.png)
 ![(C) Alternate between horizontal and vertical seams](Images/charles_rm100rows_100cols_altern.png)
