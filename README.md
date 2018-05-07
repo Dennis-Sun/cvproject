@@ -24,7 +24,7 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <div class="image123">
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_original.jpg" height="200" width="150"  />
-        <p style="text-align:center;">This is image 1</p>
+        <p style="text-align:left;">This is image 1</p>
     </div>
     <div style="float:left;margin-right:5px;">
         <img class="middle-img" src="Images/christmas_rm_100cols_Vseams.png" src="/images/tv.gif/" height="200" width="150" />
@@ -32,7 +32,7 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
     </div>
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_rm_100cols.png" height="200" />
-        <p style="text-align:center;">This is image 3</p>
+        <p style="text-align:right;">This is image 3</p>
     </div>
 </div>
 
