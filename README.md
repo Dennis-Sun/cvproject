@@ -52,4 +52,13 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 7. Forward Energy vs Backward Energy
 
+![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench3.png)
+
+![BackWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rmVseams_be.png)
+![ForWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rmVseams2_fe.png)
+
+![BackWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rm_be.png)
+![ForWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rm2_fe.png)
+
+
 8. Simple Video Seam Carving
