@@ -109,7 +109,7 @@ We mask the target object to be removed, the woman in green, and a region to pro
         <p style="text-align:left;">(a)Original Input</p>
     </div>
     <div style="float:left;margin-right:5px;">
-        <img src="Couple_protect_mask.png" height="200"/>
+        <img src="Images/Couple_protect_mask.png" height="200"/>
         <p style="text-align:center;">(b)Mask</p>
     </div>
     <div style="float:left;margin-right:5px;">
@@ -128,7 +128,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
         <p style="text-align:left;">(a)Original Input</p>
     </div>
     <div style="float:left;margin-right:5px;">
-        <img src="Beach_girl_removed.png" height="200"/>
+        <img src="Images/Beach_girl_removed.png" height="200"/>
         <p style="text-align:center;">(b)Girl Removed</p>
     </div>
     <div style="float:left;margin-right:5px;">
