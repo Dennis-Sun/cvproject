@@ -13,8 +13,8 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 1. Aspect ratio change
 
 ![Original Input](Images/christmas_original.jpg)
-![Original Input with vertial seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols_Vseams.png)
-![Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols.png)
+![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
+![Seam Carving](Images/christmas_rm_100cols.png)
 
 2. Retargeting with Optimal Seams-Order
 
