@@ -16,3 +16,16 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols_Vseams.png "Original Input with vertial seams")
 ![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols.png "Seam Carving")
 
+2. Retargeting with Optimal Seams-Order
+
+3. Image Enlarging
+
+4. Content Amplification
+
+5. Object Removal
+
+6. Object Removal and Resize
+
+7. Forward Energy vs Backward Energy
+
+8. Simple Video Seam Carving
