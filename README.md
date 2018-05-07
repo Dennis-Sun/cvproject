@@ -51,17 +51,47 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter.
-![](Images/charles_original.png "Original Input")
-![(A) Remove horizontal seams first and then remove vertical seams](Images/charles_rm100rows_rm100cols.png)
-![(B) Remove vertical seams first and then remove horizontal seams](Images/charles_rm100cols_rm100rows.png)
-![(C) Alternate between horizontal and vertical seams](Images/charles_rm100rows_100cols_altern.png)
-![(D) Optimal order retargeting](Images/charles_optimal_100cols100rows.png)
+
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/charles_original.png" height="200"/>
+        <p style="text-align:left;">Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/charles_rm100rows_rm100cols.png" height="200"/>
+        <p style="text-align:center;">(a) Remove horizontal seams first and then remove vertical seams</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/charles_rm100cols_rm100rows.png" height="200"/>
+        <p style="text-align:right;">(b) Remove vertical seams first and then remove horizontal seams</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/charles_rm100rows_100cols_altern.png" height="200"/>
+        <p style="text-align:right;">(c) Alternate between horizontal and vertical seams</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/charles_optimal_100cols100rows.png" height="200"/>
+        <p style="text-align:right;">(d) Optimal order retargeting</p>
+    </div>
+</div>
 
 ### 3. Image Enlarging
+We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.
 
-![Original Input](Images/desert.jpg)
-![Original Input with vertial seams](Images/desert_add_50percentcols_Vseams.png)
-![Seam Carving](Images/desert_add_50percentcols.png)
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/desert.jpg" height="200"/>
+        <p style="text-align:left;">(a)Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/desert_add_50percentcols_Vseams.png" height="200"/>
+        <p style="text-align:center;">(b)Calculate seams</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/desert_add_50percentcols.png" height="200" />
+        <p style="text-align:right;">(c)Add to original image</p>
+    </div>
+</div>
 
 ### 4. Content Amplification
 
