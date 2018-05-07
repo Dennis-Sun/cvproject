@@ -16,8 +16,8 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
 
-<img src="Images/christmas_original.jpg" width="150",height="200">
-<img src="Images/christmas_rm_100cols_Vseams.png" width="150",height="200">
+<img src="Images/christmas_original.jpg" width="150" height="200">
+<img src="Images/christmas_rm_100cols_Vseams.png" width="150" height="200">
 <img src="Images/christmas_rm_100cols.png" height="200">
 <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
 
