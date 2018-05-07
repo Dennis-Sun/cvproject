@@ -15,7 +15,10 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ![Original Input](Images/christmas_original.jpg |width=100)
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
-<img src="Images/christmas_original.jpg" width="100">
+
+<img src="Images/christmas_original.jpg" width="150">
+<img src="Images/christmas_rm_100cols_Vseams.png" width="150">
+<img src="Images/christmas_rm_100cols.png" width="150">
 
 ### 2. Retargeting with Optimal Seams-Order
 
