@@ -13,3 +13,6 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 1. Aspect ratio change
 
 ![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_original.jpg "Original Input")
+![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols_Vseams.png "Original Input with vertial seams")
+![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_rm_100cols.png "Seam Carving")
+
