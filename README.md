@@ -21,6 +21,21 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <img src="Images/christmas_rm_100cols.png" height="200">
 <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
 
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/christmas_original.jpg" height="200" width="200"  />
+        <p style="text-align:center;">This is image 1</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img class="Images/christmas_rm_100cols_Vseams.png" src="/images/tv.gif/" height="200" width="200" />
+        <p style="text-align:center;">This is image 2</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/christmas_rm_100cols.png" height="200" width="200" />
+        <p style="text-align:center;">This is image 3</p>
+    </div>
+</div>
+
 ### 2. Retargeting with Optimal Seams-Order
 
 ![Original Input](Images/charles_original.png)
