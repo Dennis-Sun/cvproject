@@ -138,6 +138,8 @@ We removed the girl from the image by removing vertical seams and recorded all t
     </div>
 </div>
 
+<br>
+
 
 ### 7. Forward Energy vs Backward Energy
 
