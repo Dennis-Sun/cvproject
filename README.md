@@ -117,8 +117,9 @@ We mask the target object to be removed, the woman in green, and a region to pro
         <p style="text-align:right;">(c)Object Removed</p>
     </div>
 </div>
-
 <p> </p>
+
+
 ### 6. Object Removal and Resize
 We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
