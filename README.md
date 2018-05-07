@@ -18,47 +18,47 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 2. Retargeting with Optimal Seams-Order
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/charles_original.png)
+![Original Input](Images/charles_original.png)
 
-![(A) Remove horizontal seams first and then remove vertical seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/charles_rm100rows_rm100cols.png)
-![(B) Remove vertical seams first and then remove horizontal seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/charles_rm100cols_rm100rows.png)
-![(C) Alternate between horizontal and vertical seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/charles_rm100rows_100cols_altern.png)
-![(D) Optimal order retargeting](https://github.com/Dennis-Sun/cvproject/blob/master/Images/charles_optimal_100cols100rows.png)
+![(A) Remove horizontal seams first and then remove vertical seams](Images/charles_rm100rows_rm100cols.png)
+![(B) Remove vertical seams first and then remove horizontal seams](Images/charles_rm100cols_rm100rows.png)
+![(C) Alternate between horizontal and vertical seams](Images/charles_rm100rows_100cols_altern.png)
+![(D) Optimal order retargeting](Images/charles_optimal_100cols100rows.png)
 
 3. Image Enlarging
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert.jpg)
-![Original Input with vertial seams](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert_add_50percentcols_Vseams.png)
-![Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Images/desert_add_50percentcols.png)
+![Original Input](Images/desert.jpg)
+![Original Input with vertial seams](Images/desert_add_50percentcols_Vseams.png)
+![Seam Carving](Images/desert_add_50percentcols.png)
 
 4. Content Amplification
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_original.png)
-![Resizing](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_magnified.png)
-![Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Images/arch_retarget.png)
+![Original Input](Images/arch_original.png)
+![Resizing](Images/arch_magnified.png)
+![Seam Carving](Images/arch_retarget.png)
 
 5. Object Removal
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple.png)
-![Mask](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple_protect_mask.png)
-![Object Removed](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple_objrm.png)
+![Original Input](Images/Couple.png)
+![Mask](Images/Couple_protect_mask.png)
+![Object Removed](Images/Couple_objrm.png)
 
 6. Object Removal and Resize
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach.png)
-![Girl Removed](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach_girl_removed.png)
-![Girl Removed and Resized](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach_girl_removed_resized.png)
+![Original Input](Images/Beach.png)
+![Girl Removed](Images/Beach_girl_removed.png)
+![Girl Removed and Resized](Images/Beach_girl_removed_resized.png)
 
 
 7. Forward Energy vs Backward Energy
 
-![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench3.png)
+![Original Input](Images/bench3.png)
 
-![BackWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rmVseams_be.png)
-![ForWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rmVseams2_fe.png)
+![BackWard Energy](Images/bench_rmVseams_be.png)
+![ForWard Energy](Images/bench_rmVseams2_fe.png)
 
-![BackWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rm_be.png)
-![ForWard Energy](https://github.com/Dennis-Sun/cvproject/blob/master/Images/bench_rm2_fe.png)
+![BackWard Energy](Images/bench_rm_be.png)
+![ForWard Energy](Images/bench_rm2_fe.png)
 
 
 8. Simple Video Seam Carving
