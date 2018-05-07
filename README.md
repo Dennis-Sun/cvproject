@@ -11,3 +11,4 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 ## Results
 1. Aspect ratio change
+![alt text](https://github.com/Dennis-Sun/cvproject/blob/master/Images/christmas_original.jpg "Original Input")
