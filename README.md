@@ -12,27 +12,19 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ## Results
 ### 1. Aspect ratio change
 We can successfully apply the algorithm to reduce the width of an image to a target size. Figure 1 shows the result of reducing the width of the image by 100 pixels.
-![Original Input](Images/christmas_original.jpg)
-![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
-![Seam Carving](Images/christmas_rm_100cols.png)
-
-<img src="Images/christmas_original.jpg" width="150" height="200">
-<img src="Images/christmas_rm_100cols_Vseams.png" width="150" height="200">
-<img src="Images/christmas_rm_100cols.png" height="200">
-<figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
 
 <div class="image123">
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_original.jpg" height="200" width="150"  />
-        <p style="text-align:left;">This is image 1</p>
+        <p style="text-align:left;">(a)Original Input</p>
     </div>
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_rm_100cols_Vseams.png" height="200" width="150" />
-        <p style="text-align:center;">This is image 2</p>
+        <p style="text-align:center;">(b)Original Input with vertial seams</p>
     </div>
     <div style="float:left;margin-right:5px;">
         <img src="Images/christmas_rm_100cols.png" height="200" />
-        <p style="text-align:right;">This is image 3</p>
+        <p style="text-align:right;">(c)Seam Carving</p>
     </div>
 </div>
 
