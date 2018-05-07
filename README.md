@@ -8,6 +8,27 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ## Project Proposal
 [Link to Google Doc](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
 
+## MidTerm Report
+[Link to PDF](MidTermReport.pdf)
+
+## Introduction
+The problem that our group is trying to focus on is image retargeting/content-aware image resizing. It is an important concern when we want to remove unused space from images, or add extra contents, but keep the main objects at their original aspects. Generally speaking, there are three guidelines that we need to follow when we try to resize/retarget an image:
+- preserve important content of original media
+- limit visual artifacts in resulting media
+- preserve internal structures of original media
+
+Seams, by definition, are the least-important connected pixels in an image. Therefore it comes intuitively that they are the things that we try to remove first when we want to remove unwanted contents from an image. So we choose the topic of seam carving, which is proposed by [Avidan & Shamir 07] and improved by [Rubinstein, Shamir & Avidan 08], as the main focus for our project.
+
+## Current state-of-the-art
+Besides seam carving, there are many different approaches for content-aware image resizing. Among them are scale-and-stretch warping method by [Wang et al. 2008], shift-map by [Pritch et al. 2009], and multi-operator by [Rubinstein et al. 2009]. There is a paper that summarizes all these different methods: A Comparative Study of Image Retargeting by [Rubinstein et al. 2009]. There is also a website dedicated to running image retargeting related benchmark programs called [RetargetMe](http://people.csail.mit.edu/mrub/retargetme/).
+
+## Our approach
+We adapt our major approach from [Avidan & Shamir 07].
+- Given an image I, we can calculate its energy by ![](misc/energyfunction.png)
+
+- then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M ![](misc/dynamicprogramming.png)
+
+- and finally, we can find the optimal seam to remove by ![](misc/optimalseam.png)
 
 ## Results
 ### 1. Aspect ratio change
@@ -66,7 +87,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
 
 ### 7. Forward Energy vs Backward Energy
 
-The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searchs for the seam whose removal inserts the minimal amount of energy into the image. 
+The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searchs for the seam whose removal inserts the minimal amount of energy into the image.
 ![Forward Energy](Images/ForwardEnerge.png)
 
 The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams. P(i, j) is an additional pixel based energy measure.
@@ -84,7 +105,7 @@ Here is an comparison between the original seam carving backward energy (middle)
 
 ### 8. Simple Video Seam Carving
 
-Next, we apply seam carving to videos. We search for regions in the image plane that are of low importance in all video frames. We compute the energy function on every image independently and then take the maximum energy value at each pixel location, thus reducing the problem back to image retargeting problem. Given a video sequence,  we extend the spatial L1-norm to a spatiotemporal L1-norm. alpha balances spatial and temporal contribution. 
+Next, we apply seam carving to videos. We search for regions in the image plane that are of low importance in all video frames. We compute the energy function on every image independently and then take the maximum energy value at each pixel location, thus reducing the problem back to image retargeting problem. Given a video sequence,  we extend the spatial L1-norm to a spatiotemporal L1-norm. alpha balances spatial and temporal contribution.
 
 ![Original Input](Videos/golf.mp4)
 ![Seam Carving](Videos/golf_reduced.mov)
