@@ -11,7 +11,7 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 ## Results
 ### 1. Aspect ratio change
-
+We can successfully apply the algorithm to reduce the width of an image to a target size. Figure 1 shows the result of reducing the width of the image by 100 pixels.
 ![Original Input](Images/christmas_original.jpg)
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
