@@ -10,4 +10,4 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 
 ## Results
-###1. Aspect ratio change
+1. Aspect ratio change
