@@ -51,6 +51,12 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 
 7. Forward Energy vs Backward Energy
+The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searchs for the seam whose removal inserts the minimal amount of energy into the image. 
+![Forward Energy](Images/ForwardEnerge.png)
+
+The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams. P(i, j) is an additional pixel based energy measure.
+
+Here is an comparison between the original seam carving backward energy (middle) and the new forward energy (right) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the difference in water color and the distortions of the bench bars and skeleton.
 
 ![Original Input](Images/bench3.png)
 
