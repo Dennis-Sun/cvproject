@@ -12,7 +12,7 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ## Results
 1. Aspect ratio change
 
-![Original Input](Images/christmas_original.jpg)
+![Original Input](Images/christmas_original.jpg "Original Input")
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
 
