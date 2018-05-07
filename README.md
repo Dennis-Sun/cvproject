@@ -74,5 +74,9 @@ Here is an comparison between the original seam carving backward energy (middle)
 
 ### 8. Simple Video Seam Carving
 
+Next, we apply seam carving to videos. We search for regions in the image plane that are of low importance in all video frames. We compute the energy function on every image independently and then take the maximum energy value at each pixel location, thus reducing the problem back to image retargeting problem. Given a video sequence,  we extend the spatial L1-norm to a spatiotemporal L1-norm. alpha balances spatial and temporal contribution. 
+
+![Original Input](Videos/golf.mp4)
+![Seam Carving](Videos/golf_reduced.mov)
 
 ## Discussion
