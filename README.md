@@ -39,7 +39,16 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 
 5. Object Removal
 
+![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple.png)
+![Mask](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple_protect_mask.png)
+![Object Removed](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Couple_objrm.png)
+
 6. Object Removal and Resize
+
+![Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach.png)
+![Girl Removed](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach_girl_removed.png)
+![Girl Removed and Resized](https://github.com/Dennis-Sun/cvproject/blob/master/Images/Beach_girl_removed_resized.png)
+
 
 7. Forward Energy vs Backward Energy
 
