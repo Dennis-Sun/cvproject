@@ -76,7 +76,7 @@ When we try to fit the image to a new size, the order of removing seams may matt
 </div>
 
 ### 3. Image Enlarging
-We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.
+We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image. [img credit](https://raw.githubusercontent.com/vivianhylee/seam-carving/master/example/image6.jpg)
 
 <div class="image123">
     <div style="float:left;margin-right:5px;">
@@ -94,6 +94,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 </div>
 
 ### 4. Content Amplification
+Sometimes we want to amplify certain contents of an image. We can first use standard scaling to enlarge the image and then apply seam carving on the larger image to carve the image back to its original size.
 
 ![Original Input](Images/arch_original.png)
 ![Resizing](Images/arch_magnified.png)
@@ -116,7 +117,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
 
 ### 7. Forward Energy vs Backward Energy
 
-The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searchs for the seam whose removal inserts the minimal amount of energy into the image.
+The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searches for the seam whose removal inserts the minimal amount of energy into the image.
 ![Forward Energy](Images/ForwardEnerge.png)
 
 The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams. P(i, j) is an additional pixel based energy measure.
