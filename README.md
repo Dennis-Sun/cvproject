@@ -103,16 +103,39 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 ### 5. Object Removal
 We mask the target object to be removed, the woman in green, and a region to project (red), seams are removed from the image until all marked pixels are gone. The system calculates the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
 
-![Original Input](Images/Couple.png)
-![Mask](Images/Couple_protect_mask.png)
-![Object Removed](Images/Couple_objrm.png)
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Couple.png" height="200"/>
+        <p style="text-align:left;">(a)Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Couple_protect_mask.png" height="200"/>
+        <p style="text-align:center;">(b)Mask</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Couple_objrm.png" height="200" />
+        <p style="text-align:right;">(c)Object Removed</p>
+    </div>
+</div>
+
 
 ### 6. Object Removal and Resize
 We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
-![Original Input](Images/Beach.png)
-![Girl Removed](Images/Beach_girl_removed.png)
-![Girl Removed and Resized](Images/Beach_girl_removed_resized.png)
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Beach.png" height="200"/>
+        <p style="text-align:left;">(a)Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Beach_girl_removed.png" height="200"/>
+        <p style="text-align:center;">(b)Girl Removed</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Beach_girl_removed_resized.png" height="200" />
+        <p style="text-align:right;">(c)Girl Removed and Resized</p>
+    </div>
+</div>
 
 
 ### 7. Forward Energy vs Backward Energy
