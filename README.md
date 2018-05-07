@@ -42,12 +42,14 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 ![Seam Carving](Images/arch_retarget.png)
 
 ### 5. Object Removal
+We mask the target object to be removed, the woman in green, and a region to project (red), seams are removed from the image until all marked pixels are gone. The system calculates the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
 
 ![Original Input](Images/Couple.png)
 ![Mask](Images/Couple_protect_mask.png)
 ![Object Removed](Images/Couple_objrm.png)
 
 ### 6. Object Removal and Resize
+We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
 ![Original Input](Images/Beach.png)
 ![Girl Removed](Images/Beach_girl_removed.png)
