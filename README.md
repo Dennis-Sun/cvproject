@@ -23,7 +23,7 @@ Seams, by definition, are the least-important connected pixels in an image. Ther
 Besides seam carving, there are many different approaches for content-aware image resizing. Among them are scale-and-stretch warping method by [Wang et al. 2008](https://dl.acm.org/citation.cfm?id=1409071), shift-map by [Pritch et al. 2009](https://pdfs.semanticscholar.org/38fd/97e5bd9ae77ee6d9245fad88a18385539691.pdf), and multi-operator by [Rubinstein et al. 2009](ftp://194.153.101.105/Faculty/Arik_Shamir/SCweb/multiop/multiop-lowres.pdf). There is a paper that summarizes all these different methods: A Comparative Study of Image Retargeting by [Rubinstein et al. 2009](https://people.csail.mit.edu/mrub/papers/retBenchmark.pdf). There is also a website dedicated to running image retargeting related benchmark programs called [RetargetMe](http://people.csail.mit.edu/mrub/retargetme/).
 
 ## Our approach
-We adapt our major approach from [Avidan & Shamir 07].
+We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.il/arik/SCWeb/imret/).
 - Given an image I, we can calculate its energy by ![](misc/energyfunction.png)
 
 - then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M ![](misc/dynamicprogramming.png)
