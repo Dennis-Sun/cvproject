@@ -16,9 +16,9 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 ![Original Input with vertial seams](Images/christmas_rm_100cols_Vseams.png)
 ![Seam Carving](Images/christmas_rm_100cols.png)
 
-<img src="Images/christmas_original.jpg" width="150">
-<img src="Images/christmas_rm_100cols_Vseams.png" width="150">
-<img src="Images/christmas_rm_100cols.png" width="150">
+<img src="Images/christmas_original.jpg" width="150",heigth="200">
+<img src="Images/christmas_rm_100cols_Vseams.png" width="150",heigth="200">
+<img src="Images/christmas_rm_100cols.png" heigth="200">
 
 ### 2. Retargeting with Optimal Seams-Order
 
