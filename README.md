@@ -77,8 +77,8 @@ When we try to fit the image to a new size, the order of removing seams may matt
     <p> </p>
 </div>
 
-### 3. Image Enlarging
-We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.
+<p> ### 3. Image Enlarging
+We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.</p>
 
 <div class="image123">
     <div style="float:left;margin-right:5px;">
