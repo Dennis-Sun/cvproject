@@ -89,7 +89,7 @@ When we try to fit the image to a new size, the order of removing seams may matt
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/charles_original.png"></td><td><img src="Images/charles_rm100rows_rm100cols.png"></td><td><img src="Images/charles_rm100rows_100cols_altern.png"></td><td><img src="Images/charles_optimal_100cols100rows.png"></td></tr>
+<tr><td><img src="Images/charles_rm100rows_rm100cols.png"></td><td><img src="Images/charles_rm100cols_rm100rows.png"></td><td><img src="Images/charles_rm100rows_100cols_altern.png"></td><td><img src="Images/charles_optimal_100cols100rows.png"></td></tr>
 <tr><td class="caption">(a) Remove horizontal seams first and then remove vertical seams</td><td class="caption">(b) Remove vertical seams first and then remove horizontal seams</td><td class="caption">(c) Alternate between horizontal and vertical seams</td><td class="caption">(d)Optimal order retargeting</td></tr>
 </table>
 
