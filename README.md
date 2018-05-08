@@ -47,7 +47,11 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
         <img src="Images/christmas_rm_100cols.png" height="200" />
         <p style="text-align:right;">(c)Seam Carving</p>
     </div>
+    <div class="clear"></div>
 </div>
+
+
+
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter.
@@ -73,7 +77,10 @@ When we try to fit the image to a new size, the order of removing seams may matt
         <img src="Images/charles_optimal_100cols100rows.png" height="200"/>
         <p style="text-align:right;">(d) Optimal order retargeting</p>
     </div>
+    <div class="clear"></div>
 </div>
+
+
 
 ### 3. Image Enlarging
 We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image. [img credit](https://raw.githubusercontent.com/vivianhylee/seam-carving/master/example/image6.jpg)
@@ -92,6 +99,8 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
         <p style="text-align:right;">(c)Add to original image</p>
     </div>
 </div>
+<div class="clear"></div>
+
 
 ### 4. Content Amplification
 Sometimes we want to amplify certain contents of an image. We can first use standard scaling to enlarge the image and then apply seam carving on the larger image to carve the image back to its original size.
@@ -103,16 +112,41 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 ### 5. Object Removal
 We mask the target object to be removed, the woman in green, and a region to project (red), seams are removed from the image until all marked pixels are gone. The system calculates the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
 
-![Original Input](Images/Couple.png)
-![Mask](Images/Couple_protect_mask.png)
-![Object Removed](Images/Couple_objrm.png)
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Couple.png" height="200"/>
+        <p style="text-align:left;">(a)Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Couple_protect_mask.png" height="200"/>
+        <p style="text-align:center;">(b)Mask</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Couple_objrm.png" height="200" />
+        <p style="text-align:right;">(c)Object Removed</p>
+    </div>
+</div>
+<div class="clear"></div>
+
 
 ### 6. Object Removal and Resize
 We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
-![Original Input](Images/Beach.png)
-![Girl Removed](Images/Beach_girl_removed.png)
-![Girl Removed and Resized](Images/Beach_girl_removed_resized.png)
+<div class="image123">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Beach.png" height="200"/>
+        <p style="text-align:left;">(a)Original Input</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Beach_girl_removed.png" height="200"/>
+        <p style="text-align:center;">(b)Girl Removed</p>
+    </div>
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/Beach_girl_removed_resized.png" height="200" />
+        <p style="text-align:right;">(c)Girl Removed and Resized</p>
+    </div>
+</div>
+<div class="clear"></div>
 
 
 ### 7. Forward Energy vs Backward Energy
