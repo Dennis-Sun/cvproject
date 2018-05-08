@@ -1,5 +1,4 @@
 img = imread('~/Dropbox/CS766/Programs/charles_original.png');
-addpath('~/Dropbox/CS766/Seam-Carving-Matlab-master/');
 
 energyMethod = 0;           % energy function
 cols_rm = 100; % number of columns to remove
