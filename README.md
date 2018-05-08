@@ -199,13 +199,10 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <table>
 <tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
-    </table>
-<figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>    
-    <table>
 <tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
-    <figcaption>Figure 9: Simple Video Seam Carving using the global energy approach</figcaption>
+    <figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>
 </body>
 </html>
 
@@ -216,16 +213,16 @@ To improve the performance of seam carving to images and videos, we implemented 
 
 1) We first add a source node S to every pixel in the leftmost column with infinity weight and then add a sink node T to every pixel in the rightmost column of the image. 
 
-2) For forward edges, we add the edges along with their weight as shown in Figure 10, +LR=|I(i,j+1)-I(i,j-1)|, +LU=|I(i-1,j)-I(i,j-1)|, -LU=|I(i+1,j)-I(i,j-1)|.
+2) For forward edges, we add the edges along with their weight as shown in Figure 9, +LR=|I(i,j+1)-I(i,j-1)|, +LU=|I(i-1,j)-I(i,j-1)|, -LU=|I(i+1,j)-I(i,j-1)|.
 
 3) Then, we will apply the min-cut alogrithm to partition the graph into two disjoint subsets S and T. The optimal seam is defined by the optimal cut from S to T. 
 
-Figure 11 is shown the result after removing 50 pixels from the orignal image using graph cut seam carving.
+Figure 10 is shown the result after removing 50 pixels from the orignal image using graph cut seam carving.
 
 <html>
 <body>
 <img src="misc/graghcut.png" width="150" height="150">
-<figcaption>Figure 10: Forward Energy graph connections for vertical seam</figcaption>
+<figcaption>Figure 9: Forward Energy graph connections for vertical seam</figcaption>
 </body>
 </html>
 
@@ -235,13 +232,13 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_50cols_GC.png"></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
 </table>
-     <figcaption>Figure 11: Result of reducing size an image using graph cuts method</figcaption>
+     <figcaption>Figure 10: Result of reducing size an image using graph cuts method</figcaption>
 </body>
 </html>
 
 
 ### 10. Comparisons with other approaches:
-We compare seam carving with cropping and standard image scaling. Figure 12 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content. 
+We compare seam carving with cropping and standard image scaling. Figure 11 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content. 
 
 <html>
 <body>
@@ -251,7 +248,7 @@ We compare seam carving with cropping and standard image scaling. Figure 12 is s
 <tr><td><img src="Images/christmas_rm_100cols_scale.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
 <tr><td class="caption">(c) Standard Scaling</td><td class="caption">(d) Seam Carving</td></tr>
 </table>
-    <figcaption>Figure 12: Comparisons of seam carving with cropping and standard image scaling</figcaption>
+    <figcaption>Figure 11: Comparisons of seam carving with cropping and standard image scaling</figcaption>
 </body>
 </html>
 
