@@ -110,7 +110,7 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 </html>
 
 ### 5. Object Removal
-We mask the target object to be removed, the woman in green, and a region to project (red), seams are removed from the image until all marked pixels are gone. The system calculates the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
+To remove a target object from an image, we first mask the target object to be removed (the woman in green), and a region to project (the man in red). Seams are removed from the image until all marked pixels are gone. The algorithm computes the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
 
 <html>
 <body>
@@ -122,7 +122,7 @@ We mask the target object to be removed, the woman in green, and a region to pro
 </html>
 
 ### 6. Object Removal and Resize
-We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
+Sometimes we want to resize the image to original size after removing a target object. Here we removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
 <html>
 <body>
@@ -148,9 +148,20 @@ The original algorithm using Backward Energy choose to remove seams with the lea
 </body>
 </html>
 
-The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams. P(i, j) is an additional pixel based energy measure.
+The cost is measured as forward differences between the pixels that become new neighbors. 
+<html>
+<body>
+<img src="misc/CostFE.png" width="500">
+</body>
+</html>
+We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams:
+<html>
+<body>
+<img src="misc/McostFE.png" width="400">
+</body>
+</html>
 
-Here is an comparison between the original seam carving backward energy (middle) and the new forward energy (right) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the difference in water color and the distortions of the bench bars and skeleton.
+Here is an comparison between the original seam carving backward energy (middle) and the new forward energy (right) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the distortions of the bench bars and skeleton.
 
 <html>
 <body>
