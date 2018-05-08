@@ -51,7 +51,13 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 </div>
 
 
-
+<html>
+<body>
+<table class="image">
+<tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
+<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Original Input with vertial seams</td><td class="caption">(c)Seam Carving</td></tr>
+</table>
+    
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter.
