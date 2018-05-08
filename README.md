@@ -24,11 +24,11 @@ Besides seam carving, there are many different approaches for content-aware imag
 
 ## Our approach
 We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.il/arik/SCWeb/imret/).
-- Given an image I, we can calculate its energy by ![](misc/energyfunction.png)
+- Given an image I, we can calculate its energy by ![](misc/energyfunction.png height=50)
 
-- then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M ![](misc/dynamicprogramming.png)
+- then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M ![](misc/dynamicprogramming.png height=50)
 
-- and finally, we can find the optimal seam to remove by ![](misc/optimalseam.png)
+- and finally, we can find the optimal seam to remove by ![](misc/optimalseam.png height=50)
 
 ## Results
 ### 1. Aspect ratio change
