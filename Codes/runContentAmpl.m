@@ -1,6 +1,6 @@
 % load img
 img = imread('~/Dropbox/CS766/Programs/arch_original.png');
-addpath('~/Dropbox/CS766/Seam-Carving-Matlab-master/')
+
 
 % set parameters
 energyMethod = 0;           % energy function
