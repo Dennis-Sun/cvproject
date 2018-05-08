@@ -268,12 +268,12 @@ There are some extensitions to this work.
 1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video. 
 2) We also want to apply seam carving for multi-size images, where we don't have the target sizes ahead of time. For example, the image embedded in a web page.
 
+
 ## References:
-1. RUBINSTEIN, M., GUTIERREZ, D., SORKINE, O., SHAMIR, A. 2010. A comparative study of image retargeting. In: SIGGRAPH Asia.
-2. PRITCH, Y., KAV-VENAKI, E., AND PELEG, S. 2009. Shift-map image editing. In ICCV, 151–158.
-3. WANG, Y.-S., TAI, C.-L., SORKINE, O., AND LEE, T.-Y. 2008. Optimized scale-and-stretch for image resizing. ACM TOG 27, 5.
-4. LIU, F., AND GLEICHER, M. 2005. Automatic Image Retargeting with Fisheye-View Warping. In ACM UIST, 153-162.
-5. SETLUR, V., TAKAGI, S., RASKAR, R., GLEICHER, M., AND GOOCH, B. 2005. Automatic Image Retargeting. In In the Mobile and Ubiquitous Multimedia (MUM), ACM Press.
+1. Avidan, Shai, and Ariel Shamir. "Seam carving for content-aware image resizing." ACM Transactions on graphics (TOG). Vol. 26. No. 3. ACM, 2007.
+2. Rubinstein, Michael, Ariel Shamir, and Shai Avidan. "Improved seam carving for video retargeting." ACM transactions on graphics (TOG) 27.3 (2008): 16.
+3. Rubinstein, Michael, et al. "A comparative study of image retargeting." ACM transactions on graphics (TOG). Vol. 29. No. 6. ACM, 2010.
+
 
 
 
