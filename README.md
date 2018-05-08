@@ -177,13 +177,13 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <table>
 <tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
-</table>
-<table>
 <tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
 </body>
 </html>
+
+
 
 ### 9. Graph Cut Seam Carving:
 To improve the performance of seam carving to images and videos, we implemented the graph cut method proposed in the Rubinstein et al paper. To find the optimal seam, we need to construct a directed graph to represent the image. Using vertical seams as an example:
@@ -196,9 +196,12 @@ To improve the performance of seam carving to images and videos, we implemented 
 
 Figure 11 is shown the result after removing 50 pixels from the orignal image using graph cut seam carving.
 
+<html>
+<body>
 <img src="misc/graghcut.png" width="150" height="150">
 <figcaption>Fig10. Forward Energy graph connections for vertical seam</figcaption>
-
+</body>
+</html>
 
 <html>
 <body>
@@ -208,6 +211,7 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 </table>
 </body>
 </html>
+
 
 ### 10. Comparisons with other approaches:
 We compare seam carving with cropping and standard image scaling. Figure 12 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content. 
