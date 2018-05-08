@@ -44,11 +44,13 @@ The main limitation of seam carving as a resizing method is that it does not wor
 
 1) If the image is too condensed, it does not contain 'less important' areas which can be removed. Thus, the content-aware resizing strategy such as seam carving will not work. 
 
-2) Although some images are not condensed, the content of the image is laid out in a manner that prevents the seams from bypassing important parts. Thus, seam carving will not work as well.
+2) Although some images are not condensed, the content of the image is laid out in a manner that prevents the seams from bypassing important parts. In this second case, seam carving will not succeed as well.
 
-It’s better to use scaling in these cases.
+It’s better to use standard scaling in these two cases.
 
 ### Future Work:
-1. Apply Seam carving using graph cuts to videos.
-2. Seam carving for multi-size images (target sizes are not known)
+There are some extensitions to this work. 
+1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video. 
+2) We also want to apply seam carving for multi-size images, where we don't have the target sizes ahead of time. For example, the image embedded in a web page.
+
 
