@@ -191,6 +191,8 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </body>
 </html>
 
+
+
 ## Discussion
 
 The main limitations of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 1) If the image is too condensed, in the sense that it does not contain 'less important' areas, then any type of content-aware resizing strategy will not succeed. 2) In certain types of images, albeit not being condensed, the content is laid out in a manner that prevents the seams from bypassing important parts. It’s better to use scaling in these cases.
