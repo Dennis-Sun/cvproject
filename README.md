@@ -49,8 +49,8 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
     </div>
 </div>
 <div class="clear"></div>
-.clear {
-    clear:both;
+div {
+    clear: left;
 }
 
 
