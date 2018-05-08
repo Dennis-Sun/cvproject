@@ -92,7 +92,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/desert.jpg" height="200"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" height="200"></td><td><img src="Images/desert_add_50percentcols.png" height="200"></td></tr>
+<tr><td><img src="Images/desert.jpg" height="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" height="100"></td><td><img src="Images/desert_add_50percentcols.png" height="100"></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
 </table>
 </body>
@@ -104,7 +104,7 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/arch_original.png" height="200"></td><td><img src="Images/arch_magnified.png" width="100"></td><td><img src="Images/arch_retarget.png" height="200"></td></tr>
+<tr><td><img src="Images/arch_original.png" height="100"></td><td><img src="Images/arch_magnified.png" height="100"></td><td><img src="Images/arch_retarget.png" height="100"></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
 </body>
