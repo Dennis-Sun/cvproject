@@ -22,12 +22,15 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 </body>
 </html>
 
-### Comparisons between
+### Comparisons with other approaches
+We compare seam carving with standard image scaling and Cropping. Figure 12 is shown the reduced images using different approaches. Standard image scaling is not sufficient since it is oblivious to the image content and typically can be applied only uniformly. Crop- ping is limited since it can only remove pixels from the image pe- riphery. More effective resizing can only be achieved by consider- ing the image content and not only geometric constraints.
+scaling amplifies the content of the original image
+
 <html>
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_crop.png"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b)Cropping</td></tr>
+<tr><td class="caption">Figure 12(a) Original Input</td><td class="caption">(b)Cropping</td></tr>
 <tr><td><img src="Images/christmas_rm_100cols_scale.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
 <tr><td class="caption">(c) Standard Scaling</td><td class="caption">(d) Seam Carving</td></tr>
 </table>
