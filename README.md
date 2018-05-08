@@ -47,18 +47,11 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
         <img src="Images/christmas_rm_100cols.png" height="200" />
         <p style="text-align:right;">(c)Seam Carving</p>
     </div>
+    <div class="clear"></div>
 </div>
-<div class="clear"></div>
 
 
-<div class="image123">
-        <img src="Images/christmas_original.jpg" height="200" width="150"  />
-        <p style="text-align:left;">(a)Original Input</p>
-        <img src="Images/christmas_rm_100cols_Vseams.png" height="200" width="150" />
-        <p style="text-align:center;">(b)Original Input with vertial seams</p>
-        <img src="Images/christmas_rm_100cols.png" height="200" />
-        <p style="text-align:right;">(c)Seam Carving</p>
-</div>
+
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter.
@@ -84,11 +77,10 @@ When we try to fit the image to a new size, the order of removing seams may matt
         <img src="Images/charles_optimal_100cols100rows.png" height="200"/>
         <p style="text-align:right;">(d) Optimal order retargeting</p>
     </div>
+    <div class="clear"></div>
 </div>
-<div class="clear"></div>
-.clear {
-    clear:both;
-}
+
+
 
 ### 3. Image Enlarging
 We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.
