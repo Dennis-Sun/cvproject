@@ -94,7 +94,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 </div>
 
 ### 4. Content Amplification
-
+Sometimes we want to amplify certain contents of an image. We can first use standard scaling to enlarge the image and then apply seam carving on the larger image to carve the image back to its original size.
 
 ![Original Input](Images/arch_original.png)
 ![Resizing](Images/arch_magnified.png)
