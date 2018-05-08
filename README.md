@@ -29,9 +29,9 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <html>
 <body>
 <div class="image">
-    <div style="float:middle;margin-right:5px;">
+    <div style="float:left;margin-right:5px;">
         <img src="misc/energyfunction.png" height="50"/>
-        <p style="text-align:left;">Original Input</p>
+        <p style="text-align:middle;">Original Input</p>
     </div>
 </div>
 </body>
@@ -41,9 +41,9 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <html>
 <body>
 <div class="image">
-    <div style="float:middle;margin-right:5px;">
-        <img src="misc/dynamicprogramming.png" height="50"/>
-        <p style="text-align:left;">Original Input</p>
+    <div style="float:left;margin-right:5px;">
+        <img src="misc/dynamicprogramming.png"/>
+        <p style="text-align:middle;">Original Input</p>
     </div>
 </div>
 </body>
@@ -53,9 +53,9 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <html>
 <body>
 <div class="image">
-    <div style="float:middle;margin-right:5px;">
+    <div style="float:left;margin-right:5px;">
         <img src="misc/optimalseam.png" height="50"/>
-        <p style="text-align:left;">Original Input</p>
+        <p style="text-align:middle;">Original Input</p>
     </div>
 </div>
 </body>
