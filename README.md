@@ -265,7 +265,7 @@ The main limitation of seam carving as a resizing method is that it does not wor
 It’s better to use standard scaling in these two cases.
 
 ### Future Work:
-There are some extensitions to this work.
+There are some extensions to this work.
 1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video.
 2) We also want to apply seam carving for multi-size images, where we don't have the target sizes ahead of time. For example, the image embedded in a web page.
 
