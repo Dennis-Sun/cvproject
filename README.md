@@ -185,7 +185,7 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <html>
 <body>
 <table>
-<tr><td><video src="Videos/ratatouille1.mov" height="150" controls></td><td><video src="Video/ratatouille1_reduced1.mov" height="150" controls></td></tr>
+<tr><td><video src="Videos/ratatouille1.mov" height="120" controls></td><td><video src="Video/ratatouille1_reduced1.mov" height="120" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
 </body>
