@@ -10,7 +10,7 @@ To find the optimal seam, we need to construct a directed graph to represent the
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_50cols_GC.png"></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
+<tr><td class="caption">Figure 11(a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
 </table>
 </body>
 </html>
