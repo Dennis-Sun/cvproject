@@ -24,11 +24,42 @@ Besides seam carving, there are many different approaches for content-aware imag
 
 ## Our approach
 We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.il/arik/SCWeb/imret/).
-- Given an image I, we can calculate its energy by ![](misc/energyfunction.png height=50)
+- Given an image I, we can calculate its energy by
 
-- then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M ![](misc/dynamicprogramming.png height=50)
+<html>
+<body>
+<div class="image">
+    <div style="float:middle;margin-right:5px;">
+        <img src="misc/energyfunction.png" height="50"/>
+        <p style="text-align:left;">Original Input</p>
+    </div>
+</div>
+</body>
+</html>
 
-- and finally, we can find the optimal seam to remove by ![](misc/optimalseam.png height=50)
+- then we use dynamic programming to trace back from the last line of the image to the first line to calculate the minimum energy matrix M
+<html>
+<body>
+<div class="image">
+    <div style="float:middle;margin-right:5px;">
+        <img src="misc/dynamicprogramming.png" height="50"/>
+        <p style="text-align:left;">Original Input</p>
+    </div>
+</div>
+</body>
+</html>
+
+- and finally, we can find the optimal seam to remove by
+<html>
+<body>
+<div class="image">
+    <div style="float:middle;margin-right:5px;">
+        <img src="misc/optimalseam.png" height="50"/>
+        <p style="text-align:left;">Original Input</p>
+    </div>
+</div>
+</body>
+</html>
 
 ## Results
 ### 1. Aspect ratio change
@@ -45,12 +76,6 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter, especially when both horizontal and vertical seams are included. Optimal order reflects the most energy-efficient way when that happens.
-
-<!-- <html>
-<body>
-
-</body>
-</html> -->
 
 <html>
 <body>
