@@ -145,12 +145,7 @@ The original algorithm using Backward Energy choose to remove seams with the lea
 
 <html>
 <body>
-<div class="image">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/ForwardEnerge.png"/>
-        <p style="text-align:left;">Forward Energy</p>
-    </div>
-</div>
+<img src="misc/ForwardEnerge.png" width="900">
 </body>
 </html>
 
