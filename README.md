@@ -189,26 +189,19 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </body>
 </html>
 
+
 <html>
 <body>
-<table>
-<tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
-<tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
-</table>
+<video src="Videos/golf.mp4" height="200" controls>
+<video src="Videos/golf_reduced.mov" height="200" controls>
+<video src="Videos/ratatouille1.mov" height="100" controls>
+<video src="Video/ratatouille1_reduced1.mov" height="100"  controls>
 <figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>
 </body>
 </html>
 
-<html>
-<body>
-<video height="200" controls>
-  <source src="Videos/golf.mp4" type="video/mp4">
-  <source src="Videos/golf_reduced.mov" type="video/mov">
-</video>
-</body>
-</html>
+
+
 
 ### 9. Graph Cut Seam Carving:
 To improve the performance of seam carving to images and videos, we implemented the graph cut method proposed in the Rubinstein et al paper. To find the optimal seam, we need to construct a directed graph to represent the image. Using vertical seams as an example:
