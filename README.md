@@ -95,7 +95,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/desert.jpg" width="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" width="100"></td><td><img src="Images/desert_add_50percentcols.png" width="100"></td></tr>
+<tr><td><img src="Images/desert.jpg" height="200"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" height="200"></td><td><img src="Images/desert_add_50percentcols.png" height="200"></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
 </table>
 </body>
@@ -107,7 +107,7 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/arch_original.png" width="100"></td><td><img src="Images/arch_magnified.png" width="100"></td><td><img src="Images/arch_retarget.png" width="100"></td></tr>
+<tr><td><img src="Images/arch_original.png" height="200"></td><td><img src="Images/arch_magnified.png" width="100"></td><td><img src="Images/arch_retarget.png" height="200"></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
 </body>
@@ -166,7 +166,6 @@ Here is an comparison between the original seam carving backward energy (middle)
 </div>
 <table class="image">
 <tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
-<tr><td class="caption">(a) Backward Energy</td><td class="caption">(b) Forward Energy</td></tr>
 <tr><td><img src="Images/bench_rm_be.png" height="200"></td><td><img src="Images/bench_rm2_fe.png" height="200"></td></tr>
 <tr><td class="caption">(a) Backward Energy</td><td class="caption">(b) Forward Energy</td></tr>
 </table>
@@ -180,11 +179,11 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <html>
 <body>
 <table class="video">
-<tr><td><video src="Videos/golf.mp4" height="200"></td><td><video src="Videos/golf_reduced.mov" height="200"></td></tr>
+<tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
 </body>
 </html>
 
 ## Discussion
-The main limitations of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 1) If the image is too condensed, in the sense that it does not contain 'less important' areas, then any type of content-aware resizing strategy will not succeed. 2) In certain types of images, albeit not being condensed, the content is laid out in a manner that prevents the seams from bypassing important parts.  It’s better to use scaling in these cases.
+The main limitations of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 1) If the image is too condensed, in the sense that it does not contain 'less important' areas, then any type of content-aware resizing strategy will not succeed. 2) In certain types of images, albeit not being condensed, the content is laid out in a manner that prevents the seams from bypassing important parts. It’s better to use scaling in these cases.
