@@ -35,3 +35,20 @@ We compare seam carving with cropping and standard image scaling. Figure 12 is s
 </table>
 </body>
 </html>
+
+
+
+## Discussion 
+### Limitations:
+The main limitation of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 
+
+1) If the image is too condensed, it does not contain 'less important' areas which can be removed. Thus, the content-aware resizing strategy such as seam carving will not work. 
+
+2) Although some images are not condensed, the content of the image is laid out in a manner that prevents the seams from bypassing important parts. Thus, seam carving will not work as well.
+
+It’s better to use scaling in these cases.
+
+### Future Work:
+1. Apply Seam carving using graph cuts to videos.
+2. Seam carving for multi-size images (target sizes are not known)
+
