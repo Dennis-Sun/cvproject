@@ -62,9 +62,9 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
-<tr><td class="caption">Figure 1: (a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
-    <figcaption>Figure 1: Aspect ratio change</figcaption>
+    <figcaption>Figure 1: Result of seam carving to reduce an image</figcaption>
 </body>
 </html>
 
@@ -76,13 +76,14 @@ When we try to fit the image to a new size, the order of removing seams may matt
 <div class="image">
     <div style="float:left;margin-right:5px;">
         <img src="Images/charles_original.png" height="200"/>
-        <p style="text-align:left;">Figure 2: Original Input</p>
+        <p style="text-align:left;">Original Input</p>
     </div>
 </div>
 <table class="image">
 <tr><td><img src="Images/charles_rm100rows_rm100cols.png" width="100"></td><td><img src="Images/charles_rm100cols_rm100rows.png" width="100"></td><td><img src="Images/charles_rm100rows_100cols_altern.png" width="100"></td><td><img src="Images/charles_optimal_100cols100rows.png" width="100"></td></tr>
 <tr><td class="caption">(a) horizontal then vertical</td><td class="caption">(b)  vertical then horizontal</td><td class="caption">(c) alternate between horizontal and vertical</td><td class="caption">(d) optimal order retargeting</td></tr>
 </table>
+    <figcaption>Figure 2: Result of retargeting image with optimal seams-order using seam carving</figcaption>
 </body>
 </html>
 
@@ -93,8 +94,9 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 <body>
 <table class="image">
 <tr><td><img src="Images/desert.jpg" height="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" height="100"></td><td><img src="Images/desert_add_50percentcols.png" height="100"></td></tr>
-<tr><td class="caption">Figure 3: (a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
 </table>
+    <figcaption>Figure 3: Result of image enlarging using seam carving</figcaption>
 </body>
 </html>
 
@@ -105,8 +107,9 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 <body>
 <table class="image">
 <tr><td><img src="Images/arch_original.png" height="100"></td><td><img src="Images/arch_magnified.png" height="114"></td><td><img src="Images/arch_retarget.png" height="100"></td></tr>
-<tr><td class="caption">Figure 4: (a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
+        <figcaption>Figure 4: Result of content amplification using seam carving</figcaption>
 </body>
 </html>
 
@@ -117,8 +120,9 @@ To remove a target object from an image, we first mask the target object to be r
 <body>
 <table class="image">
 <tr><td><img src="Images/Couple.png" height="200"></td><td><img src="Images/Couple_protect_mask.png" height="200"></td><td><img src="Images/Couple_objrm.png" height="200"></td></tr>
-<tr><td class="caption">Figure 5: (a) Original Input</td><td class="caption">(b) Mask</td><td class="caption">(c) Object Removed</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Mask</td><td class="caption">(c) Object Removed</td></tr>
 </table>
+    <figcaption>Figure 5: Result of object removal using seam carving</figcaption>
 </body>
 </html>
 
@@ -129,8 +133,9 @@ Sometimes we want to resize the image to original size after removing a target o
 <body>
 <table class="image">
 <tr><td><img src="Images/Beach.png" height="200"></td><td><img src="Images/Beach_girl_removed.png" height="200"></td><td><img src="Images/Beach_girl_removed_resized.png" height="200"></td></tr>
-<tr><td class="caption">Figure 6: (a) Original Input</td><td class="caption">(b) Girl Removed</td><td class="caption">(c) Girl Removed and Resized</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Girl Removed</td><td class="caption">(c) Girl Removed and Resized</td></tr>
 </table>
+    <figcaption>Figure 6: Result of object removal and resizing using seam carving</figcaption>
 </body>
 </html>
 
@@ -168,13 +173,14 @@ Here is an comparison between the original seam carving backward energy (middle)
 <body>
 <div class="image">
     <img src="Images/bench3.png">
-<figcaption>Figure 7: Original Input</figcaption>
+<figcaption>Original Input</figcaption>
 </div> 
 <table class="image">
 <tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
 <tr><td><img src="Images/bench_rm_be.png" height="200"></td><td><img src="Images/bench_rm2_fe.png" height="200"></td></tr>
 <tr><td class="caption">(a) Backward Energy</td><td class="caption">(b) Forward Energy</td></tr>
 </table>
+    <figcaption>Figure 7: Comparison between backward energy and forward energy</figcaption>
 </body>
 </html>
 
@@ -192,10 +198,14 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <body>
 <table>
 <tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
-<tr><td class="caption">Figure 8: (a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+    </table>
+<figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>    
+    <table>
 <tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
-<tr><td class="caption">Figure 9: (a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
+    <figcaption>Figure 9: Simple Video Seam Carving using the global energy approach</figcaption>
 </body>
 </html>
 
@@ -223,8 +233,9 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_50cols_GC.png"></tr>
-<tr><td class="caption">Figure 11: (a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
 </table>
+     <figcaption>Figure 11: Result of reducing size an image using graph cuts method</figcaption>
 </body>
 </html>
 
@@ -236,10 +247,11 @@ We compare seam carving with cropping and standard image scaling. Figure 12 is s
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_crop.png"></td></tr>
-<tr><td class="caption">Figure 12(a) Original Input</td><td class="caption">(b)Cropping</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b)Cropping</td></tr>
 <tr><td><img src="Images/christmas_rm_100cols_scale.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
 <tr><td class="caption">(c) Standard Scaling</td><td class="caption">(d) Seam Carving</td></tr>
 </table>
+    <figcaption>Figure 12: Comparisons of seam carving with cropping and standard image scaling</figcaption>
 </body>
 </html>
 
