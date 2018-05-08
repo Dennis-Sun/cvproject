@@ -22,12 +22,11 @@ Besides seam carving, there are many different approaches for content-aware imag
 ## Our approach
 We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.il/arik/SCWeb/imret/).
 - Given an image I, we can calculate its energy by
-
 <html>
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/energyfunction.png" height="50"/>
+        <img src="misc/energyfunction.png" height="20"/>
     </div>
 </div>
 </body>
@@ -38,7 +37,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/dynamicprogramming.png"/>
+        <img src="misc/dynamicprogramming.png" height=20/>
     </div>
 </div>
 </body>
@@ -49,7 +48,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/optimalseam.png" height="50"/>
+        <img src="misc/optimalseam.png" height="20"/>
     </div>
 </div>
 </body>
