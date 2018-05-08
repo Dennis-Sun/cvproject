@@ -5,11 +5,9 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 - Shuo Sun, ssun99@wisc.edu
 - Shilu Zhang, szhang256@wisc.edu
 
-## Project Proposal
-[Link to Google Doc](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
+[Proposal](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
 
-## MidTerm Report
-[Link to PDF](MidTermReport.pdf)
+[Midterm Report](MidTermReport.pdf)
 
 ## Introduction
 The problem that our group is trying to focus on is image retargeting/content-aware image resizing. It is an important concern when we want to remove unused space from images, or add extra contents, but keep the main objects at their original aspects. Generally speaking, there are three guidelines that we need to follow when we try to resize/retarget an image:
@@ -186,4 +184,5 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </html>
 
 ## Discussion
+
 The main limitations of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 1) If the image is too condensed, in the sense that it does not contain 'less important' areas, then any type of content-aware resizing strategy will not succeed. 2) In certain types of images, albeit not being condensed, the content is laid out in a manner that prevents the seams from bypassing important parts. It’s better to use scaling in these cases.
