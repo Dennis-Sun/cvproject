@@ -64,6 +64,7 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
 <tr><td class="caption">Figure 1: (a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
+    <figcaption>Figure 1: Aspect ratio change</figcaption>
 </body>
 </html>
 
