@@ -140,27 +140,51 @@ We removed the girl from the image by removing vertical seams and recorded all t
 ### 7. Forward Energy vs Backward Energy
 
 The original algorithm using Backward Energy choose to remove seams with the least amount of energy from the image, ignoring energy that are inserted into the retargeted image. The new algorithm in the Rubinstein et al paper looks forward at the resulting image and searches for the seam whose removal inserts the minimal amount of energy into the image.
-![Forward Energy](Images/ForwardEnerge.png)
+
+<html>
+<body>
+<div class="image">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/ForwardEnerge.png"/>
+        <p style="text-align:left;">Forward Energy</p>
+    </div>
+</div>
+</body>
+</html>
 
 The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams. P(i, j) is an additional pixel based energy measure.
 
 Here is an comparison between the original seam carving backward energy (middle) and the new forward energy (right) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the difference in water color and the distortions of the bench bars and skeleton.
 
-![Original Input](Images/bench3.png)
-
-![BackWard Energy](Images/bench_rmVseams_be.png)
-![ForWard Energy](Images/bench_rmVseams2_fe.png)
-
-![BackWard Energy](Images/bench_rm_be.png)
-![ForWard Energy](Images/bench_rm2_fe.png)
-
+<html>
+<body>
+<div class="image">
+    <div style="float:left;margin-right:5px;">
+        <img src="Images/bench3.png"/>
+        <p style="text-align:left;">Original Input</p>
+    </div>
+</div>
+<table class="image">
+<tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
+<tr><td class="caption">(a) Backward Energy</td><td class="caption">(b) Forward Energy</td></tr>
+<tr><td><img src="Images/bench_rm_be.png" height="200"></td><td><img src="Images/bench_rm2_fe.png" height="200"></td></tr>
+<tr><td class="caption">(a) Backward Energy</td><td class="caption">(b) Forward Energy</td></tr>
+</table>
+</body>
+</html>
 
 ### 8. Simple Video Seam Carving
 
 Next, we apply seam carving to videos. We search for regions in the image plane that are of low importance in all video frames. We compute the energy function on every image independently and then take the maximum energy value at each pixel location, thus reducing the problem back to image retargeting problem. Given a video sequence,  we extend the spatial L1-norm to a spatiotemporal L1-norm. alpha balances spatial and temporal contribution.
 
-![Original Input](Videos/golf.mp4)
-![Seam Carving](Videos/golf_reduced.mov)
+<html>
+<body>
+<table class="video">
+<tr><td><video src="Videos/golf.mp4" height="200"></td><td><video src="Videos/golf_reduced.mov" height="200"></td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+</table>
+</body>
+</html>
 
 ## Discussion
 The main limitations of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 1) If the image is too condensed, in the sense that it does not contain 'less important' areas, then any type of content-aware resizing strategy will not succeed. 2) In certain types of images, albeit not being condensed, the content is laid out in a manner that prevents the seams from bypassing important parts.  It’s better to use scaling in these cases.
