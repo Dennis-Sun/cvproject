@@ -38,8 +38,10 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
-<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Original Input with vertial seams</td><td class="caption">(c)Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
+</body>
+</html>
 
 ### 2. Retargeting with Optimal Seams-Order
 When we try to fit the image to a new size, the order of removing seams may matter, especially when both horizontal and vertical seams are included. Optimal order reflects the most energy-efficient way when that happens.
@@ -60,7 +62,7 @@ When we try to fit the image to a new size, the order of removing seams may matt
 </div>
 <table class="image">
 <tr><td><img src="Images/charles_rm100rows_rm100cols.png" width="100"></td><td><img src="Images/charles_rm100cols_rm100rows.png" width="100"></td><td><img src="Images/charles_rm100rows_100cols_altern.png" width="100"></td><td><img src="Images/charles_optimal_100cols100rows.png" width="100"></td></tr>
-<tr><td class="caption">(a)horizontal then vertical</td><td class="caption">(b) vertical then horizontal</td><td class="caption">(c)alternate between horizontal and vertical</td><td class="caption">(d)optimal order retargeting</td></tr>
+<tr><td class="caption">(a) horizontal then vertical</td><td class="caption">(b)  vertical then horizontal</td><td class="caption">(c) alternate between horizontal and vertical</td><td class="caption">(d) optimal order retargeting</td></tr>
 </table>
 </body>
 </html>
@@ -72,7 +74,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 <body>
 <table class="image">
 <tr><td><img src="Images/desert.jpg" width="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" width="100"></td><td><img src="Images/desert_add_50percentcols.png" width="100"></td></tr>
-<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Calculate seams</td><td class="caption">(c)Add to original image</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
 </table>
 </body>
 </html>
@@ -84,7 +86,7 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 <body>
 <table class="image">
 <tr><td><img src="Images/arch_original.png" width="100"></td><td><img src="Images/arch_magnified.png" width="100"></td><td><img src="Images/arch_retarget.png" width="100"></td></tr>
-<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Resizing</td><td class="caption">(c)Seam Carving</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
 </body>
 </html>
@@ -96,7 +98,7 @@ We mask the target object to be removed, the woman in green, and a region to pro
 <body>
 <table class="image">
 <tr><td><img src="Images/Couple.png" height="200"></td><td><img src="Images/Couple_protect_mask.png" height="200"></td><td><img src="Images/Couple_objrm.png" height="200"></td></tr>
-<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Mask</td><td class="caption">(c)Object Removed</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Mask</td><td class="caption">(c) Object Removed</td></tr>
 </table>
 </body>
 </html>
@@ -108,7 +110,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
 <body>
 <table class="image">
 <tr><td><img src="Images/Beach.png" height="200"></td><td><img src="Images/Beach_girl_removed.png" height="200"></td><td><img src="Images/Beach_girl_removed_resized.png" height="200"></td></tr>
-<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Girl Removed</td><td class="caption">(c)Girl Removed and Resized</td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Girl Removed</td><td class="caption">(c) Girl Removed and Resized</td></tr>
 </table>
 </body>
 </html>
