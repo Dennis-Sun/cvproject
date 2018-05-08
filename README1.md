@@ -22,7 +22,7 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 </body>
 </html>
 
-### Comparisons with other approaches
+### Comparisons with other approaches:
 We compare seam carving with cropping and standard image scaling. Figure 12 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content. 
 
 <html>
