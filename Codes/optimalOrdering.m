@@ -1,5 +1,5 @@
 function ops = optimalOrdering(img, nrows_removed, ncols_removed, energyMethod)
-    addpath('~/Dropbox/CS766/Seam-Carving-Matlab-master/');
+
     % corner case
     if nrows_removed >= size(img,1) || ncols_removed >= size(img,2)
         error('Improper parameters for number of rows/cols removed');
