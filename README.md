@@ -6,6 +6,7 @@ Project for CS766 (Computer Vision), Spring 2018 UW-Madison
 - Shilu Zhang, szhang256@wisc.edu
 
 [Proposal](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
+
 [Midterm Report](MidTermReport.pdf)
 
 ## Introduction
