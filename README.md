@@ -162,7 +162,7 @@ We use these costs in a new accumulative cost matrix M to calculate the seams us
 </body>
 </html>
 
-Here is an comparison between the original seam carving backward energy (middle) and the new forward energy (right) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the distortions of the bench bars and skeleton.
+Here is an comparison between the original seam carving backward energy (a) and the new forward energy (b) for resizing an image. The new results suffer much less from the artifacts generated using backward energy such as the distortions of the bench bars and skeleton.
 
 <html>
 <body>
@@ -201,7 +201,14 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </body>
 </html>
 
-
+<html>
+<body>
+<video height="200" controls>
+  <source src="Videos/golf.mp4" type="video/mp4">
+  <source src="Videos/golf_reduced.mov" type="video/mov">
+</video>
+</body>
+</html>
 
 ### 9. Graph Cut Seam Carving:
 To improve the performance of seam carving to images and videos, we implemented the graph cut method proposed in the Rubinstein et al paper. To find the optimal seam, we need to construct a directed graph to represent the image. Using vertical seams as an example:
@@ -263,6 +270,13 @@ It’s better to use standard scaling in these two cases.
 There are some extensitions to this work. 
 1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video. 
 2) We also want to apply seam carving for multi-size images, where we don't have the target sizes ahead of time. For example, the image embedded in a web page.
+
+## References:
+1. RUBINSTEIN, M., GUTIERREZ, D., SORKINE, O., SHAMIR, A. 2010. A comparative study of image retargeting. In: SIGGRAPH Asia.
+2. PRITCH, Y., KAV-VENAKI, E., AND PELEG, S. 2009. Shift-map image editing. In ICCV, 151–158.
+3. WANG, Y.-S., TAI, C.-L., SORKINE, O., AND LEE, T.-Y. 2008. Optimized scale-and-stretch for image resizing. ACM TOG 27, 5.
+4. LIU, F., AND GLEICHER, M. 2005. Automatic Image Retargeting with Fisheye-View Warping. In ACM UIST, 153-162.
+5. SETLUR, V., TAKAGI, S., RASKAR, R., GLEICHER, M., AND GOOCH, B. 2005. Automatic Image Retargeting. In In the Mobile and Ubiquitous Multimedia (MUM), ACM Press.
 
 
 
