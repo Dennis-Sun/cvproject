@@ -1,5 +1,5 @@
 img = imread('~/Dropbox/CS766/Programs/bench3.png');
-addpath('~/Dropbox/CS766/Seam-Carving-Matlab-master/')
+
 
 energyMethod = 0;           % energy function
 
