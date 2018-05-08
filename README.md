@@ -194,18 +194,18 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <html>
 <body>
 <video src="Videos/golf.mp4" height="200" controls>
-<video src="Videos/golf_reduced.mov" height="200" controls>
-<video src="Videos/ratatouille1.mp4" height="200" controls>
-<video src="Videos/ratatouille1_reduced1.mov" height="200" controls>
+<video src="Videos/golf_reduced.avi" height="200" controls>
+<video src="Videos/ratatouille1.mov" height="200" controls>
+<video src="Videos/ratatouille1_reduced1.avi" height="200" controls>
 <figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>
 </body>
 </html>
 
     
 [(a) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf.mp4)
-[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf_reduced.mov)
+[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf_reduced.avi)
 [(c) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1.mov)
-[(d) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1_reduced1.mov)
+[(d) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1_reduced1.avi)
 
 
 ### 9. Graph Cut Seam Carving:
