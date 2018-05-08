@@ -150,7 +150,7 @@ The original algorithm using Backward Energy choose to remove seams with the lea
 </body>
 </html>
 
-The cost is measured as forward differences between the pixels that become new neighbors. 
+The cost is measured as forward differences between the pixels that become new neighbors.
 <html>
 <body>
 <img src="misc/CostFE.png" width="500">
@@ -170,7 +170,7 @@ Here is an comparison between the original seam carving backward energy (a) and 
 <div class="image">
     <img src="Images/bench3.png">
 <figcaption>Original Input</figcaption>
-</div> 
+</div>
 <table class="image">
 <tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
 <tr><td><img src="Images/bench_rm_be.png" height="200"></td><td><img src="Images/bench_rm2_fe.png" height="200"></td></tr>
@@ -201,21 +201,21 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </body>
 </html>
 
-    
+
 [(a) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf.mp4)
-[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf_reduced.avi)
-[(c) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1.mov)
-[(d) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1_reduced1.avi)
+[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf_reduced.mp4)
+[(c) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1.mp4)
+[(d) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1_reduced1.mp4)
 
 
 ### 9. Graph Cut Seam Carving:
 To improve the performance of seam carving to images and videos, we implemented the graph cut method proposed in the Rubinstein et al paper. To find the optimal seam, we need to construct a directed graph to represent the image. Using vertical seams as an example:
 
-1) We first add a source node S to every pixel in the leftmost column with infinity weight and then add a sink node T to every pixel in the rightmost column of the image. 
+1) We first add a source node S to every pixel in the leftmost column with infinity weight and then add a sink node T to every pixel in the rightmost column of the image.
 
 2) For forward edges, we add the edges along with their weight as shown in Figure 9, +LR=|I(i,j+1)-I(i,j-1)|, +LU=|I(i-1,j)-I(i,j-1)|, -LU=|I(i+1,j)-I(i,j-1)|.
 
-3) Then, we will apply the min-cut alogrithm to partition the graph into two disjoint subsets S and T. The optimal seam is defined by the optimal cut from S to T. 
+3) Then, we will apply the min-cut alogrithm to partition the graph into two disjoint subsets S and T. The optimal seam is defined by the optimal cut from S to T.
 
 Figure 10 is shown the result after removing 50 pixels from the orignal image using graph cut seam carving.
 
@@ -238,7 +238,7 @@ Figure 10 is shown the result after removing 50 pixels from the orignal image us
 
 
 ### 10. Comparisons with other approaches:
-We compare seam carving with cropping and standard image scaling. Figure 11 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content. 
+We compare seam carving with cropping and standard image scaling. Figure 11 is shown the original image and resized images using different approaches. We can see that cropping only remove pixels from the image periphery. Standard image scaling is not sufficient because it is oblivious to the image content and reduces the content of the original image. Seam carving achieves better results than cropping and standard image scaling as it considers the image content.
 
 <html>
 <body>
@@ -254,19 +254,19 @@ We compare seam carving with cropping and standard image scaling. Figure 11 is s
 
 
 
-## Discussion 
+## Discussion
 ### Limitations:
-The main limitation of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content. 
+The main limitation of seam carving as a resizing method is that it does not work automatically on all images. Two major factors that limit the seam carving approach are amount of content in an image and the layout of the image content.
 
-1) If the image is too condensed, it does not contain 'less important' areas which can be removed. Thus, the content-aware resizing strategy such as seam carving will not work. 
+1) If the image is too condensed, it does not contain 'less important' areas which can be removed. Thus, the content-aware resizing strategy such as seam carving will not work.
 
 2) Although some images are not condensed, the content of the image is laid out in a manner that prevents the seams from bypassing important parts. In this second case, seam carving will not succeed as well.
 
 It’s better to use standard scaling in these two cases.
 
 ### Future Work:
-There are some extensitions to this work. 
-1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video. 
+There are some extensitions to this work.
+1) We would like to apply seam carving using graph cuts to videos as it could remove  serious artifacts that are caused by applying seam carving separately to each frame of the video.
 2) We also want to apply seam carving for multi-size images, where we don't have the target sizes ahead of time. For example, the image embedded in a web page.
 
 
@@ -274,7 +274,3 @@ There are some extensitions to this work.
 1. Avidan, Shai, and Ariel Shamir. "Seam carving for content-aware image resizing." ACM Transactions on graphics (TOG). Vol. 26. No. 3. ACM, 2007.
 2. Rubinstein, Michael, Ariel Shamir, and Shai Avidan. "Improved seam carving for video retargeting." ACM transactions on graphics (TOG) 27.3 (2008): 16.
 3. Rubinstein, Michael, et al. "A comparative study of image retargeting." ACM transactions on graphics (TOG). Vol. 29. No. 6. ACM, 2010.
-
-
-
-
