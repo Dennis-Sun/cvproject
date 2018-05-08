@@ -200,10 +200,10 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 </body>
 </html>
 
-[Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf.mp4)
-[Proposal](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
-[Proposal](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
-[Proposal](https://docs.google.com/document/d/1z0z4b6yVGYcPRXuUE_9kr-a2so3J8vSAw8htgIIx6CU/edit?usp=sharing)
+[(a) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf.mp4)
+[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/golf_reduced.mov)
+[(a) Original Input](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1.mov)
+[(b) Seam Carving](https://github.com/Dennis-Sun/cvproject/blob/master/Videos/ratatouille1_reduced1.mov)
 
 
 ### 9. Graph Cut Seam Carving:
