@@ -62,7 +62,7 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
+<tr><td class="caption">Figure 1: (a) Original Input</td><td class="caption">(b) Original Input with vertial seams</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
 </body>
 </html>
@@ -75,7 +75,7 @@ When we try to fit the image to a new size, the order of removing seams may matt
 <div class="image">
     <div style="float:left;margin-right:5px;">
         <img src="Images/charles_original.png" height="200"/>
-        <p style="text-align:left;">Original Input</p>
+        <p style="text-align:left;">Figure 2: Original Input</p>
     </div>
 </div>
 <table class="image">
@@ -92,7 +92,7 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
 <body>
 <table class="image">
 <tr><td><img src="Images/desert.jpg" height="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" height="100"></td><td><img src="Images/desert_add_50percentcols.png" height="100"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
+<tr><td class="caption">Figure 3: (a) Original Input</td><td class="caption">(b) Calculate seams</td><td class="caption">(c) Add to original image</td></tr>
 </table>
 </body>
 </html>
@@ -104,7 +104,7 @@ Sometimes we want to amplify certain contents of an image. We can first use stan
 <body>
 <table class="image">
 <tr><td><img src="Images/arch_original.png" height="100"></td><td><img src="Images/arch_magnified.png" height="114"></td><td><img src="Images/arch_retarget.png" height="100"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
+<tr><td class="caption">Figure 4: (a) Original Input</td><td class="caption">(b) Resizing</td><td class="caption">(c) Seam Carving</td></tr>
 </table>
 </body>
 </html>
@@ -116,7 +116,7 @@ We mask the target object to be removed, the woman in green, and a region to pro
 <body>
 <table class="image">
 <tr><td><img src="Images/Couple.png" height="200"></td><td><img src="Images/Couple_protect_mask.png" height="200"></td><td><img src="Images/Couple_objrm.png" height="200"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Mask</td><td class="caption">(c) Object Removed</td></tr>
+<tr><td class="caption">Figure 5: (a) Original Input</td><td class="caption">(b) Mask</td><td class="caption">(c) Object Removed</td></tr>
 </table>
 </body>
 </html>
@@ -128,7 +128,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
 <body>
 <table class="image">
 <tr><td><img src="Images/Beach.png" height="200"></td><td><img src="Images/Beach_girl_removed.png" height="200"></td><td><img src="Images/Beach_girl_removed_resized.png" height="200"></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Girl Removed</td><td class="caption">(c) Girl Removed and Resized</td></tr>
+<tr><td class="caption">Figure 6: (a) Original Input</td><td class="caption">(b) Girl Removed</td><td class="caption">(c) Girl Removed and Resized</td></tr>
 </table>
 </body>
 </html>
@@ -156,7 +156,7 @@ Here is an comparison between the original seam carving backward energy (middle)
 <body>
 <div class="image">
     <img src="Images/bench3.png">
-<figcaption>Original Input</figcaption>
+<figcaption>Figure 7: Original Input</figcaption>
 </div> 
 <table class="image">
 <tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
@@ -166,6 +166,7 @@ Here is an comparison between the original seam carving backward energy (middle)
 </body>
 </html>
 
+
 ### 8. Simple Video Seam Carving
 
 Next, we apply seam carving to videos. We search for regions in the image plane that are of low importance in all video frames. We compute the energy function on every image independently and then take the maximum energy value at each pixel location, thus reducing the problem back to image retargeting problem. Given a video sequence,  we extend the spatial L1-norm to a spatiotemporal L1-norm. alpha balances spatial and temporal contribution.
@@ -174,9 +175,9 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <body>
 <table>
 <tr><td><video src="Videos/golf.mp4" height="200" controls></td><td><video src="Videos/golf_reduced.mov" height="200" controls></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+<tr><td class="caption">Figure 8: (a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 <tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
-<tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
+<tr><td class="caption">Figure 9: (a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
 </body>
 </html>
@@ -197,7 +198,7 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 <html>
 <body>
 <img src="misc/graghcut.png" width="150" height="150">
-<figcaption>Fig10. Forward Energy graph connections for vertical seam</figcaption>
+<figcaption>Figure 10: Forward Energy graph connections for vertical seam</figcaption>
 </body>
 </html>
 
@@ -205,7 +206,7 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 <body>
 <table class="image">
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_50cols_GC.png"></tr>
-<tr><td class="caption">Figure 11(a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
+<tr><td class="caption">Figure 11: (a) Original Input</td><td class="caption">(b)Seam Carving Using Graph Cut</td></tr>
 </table>
 </body>
 </html>
