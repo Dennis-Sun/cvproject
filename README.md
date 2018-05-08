@@ -197,7 +197,7 @@ Next, we apply seam carving to videos. We search for regions in the image plane 
 <tr><td><video src="Videos/ratatouille1.mov" width="200" controls></td><td><video src="Video/ratatouille1_reduced1.mov" width="100" controls></td></tr>
 <tr><td class="caption">(a) Original Input</td><td class="caption">(b) Seam Carving</td></tr>
 </table>
-    <figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>
+<figcaption>Figure 8: Simple Video Seam Carving using the global energy approach</figcaption>
 </body>
 </html>
 
