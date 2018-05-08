@@ -26,7 +26,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/energyfunction.png" height="20"/>
+        <img src="misc/energyfunction.png" height="30"/>
     </div>
 </div>
 </body>
@@ -37,7 +37,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/dynamicprogramming.png" height=20/>
+        <img src="misc/dynamicprogramming.png" height=30/>
     </div>
 </div>
 </body>
@@ -48,7 +48,7 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 <body>
 <div class="image">
     <div style="float:middle;">
-        <img src="misc/optimalseam.png" height="20"/>
+        <img src="misc/optimalseam.png" height="30"/>
     </div>
 </div>
 </body>
