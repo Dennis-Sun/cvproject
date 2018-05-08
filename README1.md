@@ -21,3 +21,15 @@ Figure 11 is shown the result after removing 50 pixels from the orignal image us
 </table>
 </body>
 </html>
+
+### Comparisons between
+<html>
+<body>
+<table class="image">
+<tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_crop.png"></td></tr>
+<tr><td class="caption">(a) Original Input</td><td class="caption">(b)Cropping</td></tr>
+<tr><td><img src="Images/christmas_rm_100cols_scale.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
+<tr><td class="caption">(c) Standard Scaling</td><td class="caption">(d) Seam Carving</td></tr>
+</table>
+</body>
+</html>
