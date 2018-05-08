@@ -50,25 +50,8 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 </div>
 <div class="clear"></div>
 
-.clear {
-    clear:both;
-}
 
 
-<div class="image123">
-    <div>
-        <img src="Images/christmas_original.jpg" height="200" width="150"  />
-        <p>Original Input</p>
-    </div>
-    <div>
-        <img src="Images/christmas_rm_100cols_Vseams.png" height="200" width="150" />
-        <p>Original Input with vertial seams</p>
-    </div>
-    <div>
-        <img src="Images/christmas_rm_100cols.png" height="200" />
-        <p>Seam Carving</p>
-    </div>
-</div>
 
 
 ### 2. Retargeting with Optimal Seams-Order
@@ -95,8 +78,9 @@ When we try to fit the image to a new size, the order of removing seams may matt
         <img src="Images/charles_optimal_100cols100rows.png" height="200"/>
         <p style="text-align:right;">(d) Optimal order retargeting</p>
     </div>
-    <p> </p>
 </div>
+<div class="clear"></div>
+
 
 ### 3. Image Enlarging
 We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image.
@@ -115,6 +99,8 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
         <p style="text-align:right;">(c)Add to original image</p>
     </div>
 </div>
+<div class="clear"></div>
+
 
 ### 4. Content Amplification
 
@@ -139,7 +125,7 @@ We mask the target object to be removed, the woman in green, and a region to pro
         <p style="text-align:right;">(c)Object Removed</p>
     </div>
 </div>
-<p> </p>
+<div class="clear"></div>
 
 
 ### 6. Object Removal and Resize
@@ -159,8 +145,7 @@ We removed the girl from the image by removing vertical seams and recorded all t
         <p style="text-align:right;">(c)Girl Removed and Resized</p>
     </div>
 </div>
-
-<br>
+<div class="clear"></div>
 
 
 ### 7. Forward Energy vs Backward Energy
