@@ -40,119 +40,78 @@ We can successfully apply the algorithm to reduce the width of an image to a tar
 <tr><td><img src="Images/christmas_original.jpg"></td><td><img src="Images/christmas_rm_100cols_Vseams.png"></td><td><img src="Images/christmas_rm_100cols.png"></td></tr>
 <tr><td class="caption">(a)Original Input</td><td class="caption">(b)Original Input with vertial seams</td><td class="caption">(c)Seam Carving</td></tr>
 </table>
-    
 
 ### 2. Retargeting with Optimal Seams-Order
-When we try to fit the image to a new size, the order of removing seams may matter.
+When we try to fit the image to a new size, the order of removing seams may matter, especially when both horizontal and vertical seams are included. Optimal order reflects the most energy-efficient way when that happens.
+
+<!-- <html>
+<body>
+
+</body>
+</html> -->
+
 <html>
 <body>
-<div class="image123">
+<div class="image">
     <div style="float:left;margin-right:5px;">
         <img src="Images/charles_original.png" height="200"/>
         <p style="text-align:left;">Original Input</p>
     </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/charles_rm100rows_rm100cols.png" height="200"/>
-        <p style="text-align:center;">(a) Remove horizontal seams first and then remove vertical seams</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/charles_rm100cols_rm100rows.png" height="200"/>
-        <p style="text-align:right;">(b) Remove vertical seams first and then remove horizontal seams</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/charles_rm100rows_100cols_altern.png" height="200"/>
-        <p style="text-align:right;">(c) Alternate between horizontal and vertical seams</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/charles_optimal_100cols100rows.png" height="200"/>
-        <p style="text-align:right;">(d) Optimal order retargeting</p>
-    </div>
-    <div class="clear"></div>
 </div>
+<table class="image">
+<tr><td><img src="Images/charles_rm100rows_rm100cols.png" width="100"></td><td><img src="Images/charles_rm100cols_rm100rows.png" width="100"></td><td><img src="Images/charles_rm100rows_100cols_altern.png" width="100"></td><td><img src="Images/charles_optimal_100cols100rows.png" width="100"></td></tr>
+<tr><td class="caption">(a)horizontal then vertical</td><td class="caption">(b) vertical then horizontal</td><td class="caption">(c)alternate between horizontal and vertical</td><td class="caption">(d)optimal order retargeting</td></tr>
+</table>
 </body>
 </html>
 
-
+### 3. Image Enlarging
+We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image. [img credit](https://raw.githubusercontent.com/vivianhylee/seam-carving/master/example/image6.jpg)
 
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/charles_rm100rows_rm100cols.png" width="100"></td><td><img src="Images/charles_rm100cols_rm100rows.png" width="100"></td><td><img src="Images/charles_rm100rows_100cols_altern.png" width="100"></td><td><img src="Images/charles_optimal_100cols100rows.png" width="100"></td></tr>
-<tr><td class="caption">(a) Remove horizontal seams
-    first and then remove 
-    vertical seams</td><td class="caption">(b) Remove vertical seams first and then remove horizontal seams</td><td class="caption">(c) Alternate between horizontal and vertical seams</td><td class="caption">(d)Optimal order retargeting</td></tr>
+<tr><td><img src="Images/desert.jpg" width="100"></td><td><img src="Images/desert_add_50percentcols_Vseams.png" width="100"></td><td><img src="Images/desert_add_50percentcols.png" width="100"></td></tr>
+<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Calculate seams</td><td class="caption">(c)Add to original image</td></tr>
 </table>
-
-### 3. Image Enlarging
-We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image. [img credit](https://raw.githubusercontent.com/vivianhylee/seam-carving/master/example/image6.jpg)
-<html>
-<body>
-<div class="image123">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/desert.jpg" height="200"/>
-        <p style="text-align:left;">(a)Original Input</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/desert_add_50percentcols_Vseams.png" height="200"/>
-        <p style="text-align:center;">(b)Calculate seams</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/desert_add_50percentcols.png" height="200" />
-        <p style="text-align:right;">(c)Add to original image</p>
-    </div>
-</div>
-<div class="clear"></div>
 </body>
 </html>
-
-
 
 ### 4. Content Amplification
 Sometimes we want to amplify certain contents of an image. We can first use standard scaling to enlarge the image and then apply seam carving on the larger image to carve the image back to its original size.
 
-![Original Input](Images/arch_original.png)
-![Resizing](Images/arch_magnified.png)
-![Seam Carving](Images/arch_retarget.png)
+<html>
+<body>
+<table class="image">
+<tr><td><img src="Images/arch_original.png" width="100"></td><td><img src="Images/arch_magnified.png" width="100"></td><td><img src="Images/arch_retarget.png" width="100"></td></tr>
+<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Resizing</td><td class="caption">(c)Seam Carving</td></tr>
+</table>
+</body>
+</html>
 
 ### 5. Object Removal
 We mask the target object to be removed, the woman in green, and a region to project (red), seams are removed from the image until all marked pixels are gone. The system calculates the smaller of the vertical or horizontal diameters of the target removal regions and perform vertical or horizontal removals accordingly.
 
-<div class="image123">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Couple.png" height="200"/>
-        <p style="text-align:left;">(a)Original Input</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Couple_protect_mask.png" height="200"/>
-        <p style="text-align:center;">(b)Mask</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Couple_objrm.png" height="200" />
-        <p style="text-align:right;">(c)Object Removed</p>
-    </div>
-</div>
-<div class="clear"></div>
-
+<html>
+<body>
+<table class="image">
+<tr><td><img src="Images/Couple.png" height="200"></td><td><img src="Images/Couple_protect_mask.png" height="200"></td><td><img src="Images/Couple_objrm.png" height="200"></td></tr>
+<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Mask</td><td class="caption">(c)Object Removed</td></tr>
+</table>
+</body>
+</html>
 
 ### 6. Object Removal and Resize
 We removed the girl from the image by removing vertical seams and recorded all the coordinates and insert new seams in the same order at the recorded coordinates location of removal to regain the original size of the image.
 
-<div class="image123">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Beach.png" height="200"/>
-        <p style="text-align:left;">(a)Original Input</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Beach_girl_removed.png" height="200"/>
-        <p style="text-align:center;">(b)Girl Removed</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/Beach_girl_removed_resized.png" height="200" />
-        <p style="text-align:right;">(c)Girl Removed and Resized</p>
-    </div>
-</div>
-<div class="clear"></div>
-
+<html>
+<body>
+<table class="image">
+<tr><td><img src="Images/Beach.png" height="200"></td><td><img src="Images/Beach_girl_removed.png" height="200"></td><td><img src="Images/Beach_girl_removed_resized.png" height="200"></td></tr>
+<tr><td class="caption">(a)Original Input</td><td class="caption">(b)Girl Removed</td><td class="caption">(c)Girl Removed and Resized</td></tr>
+</table>
+</body>
+</html>
 
 ### 7. Forward Energy vs Backward Energy
 
