@@ -148,11 +148,16 @@ The original algorithm using Backward Energy choose to remove seams with the lea
 </body>
 </html>
 
-The cost is measured as forward differences between the pixels that become new neighbors. We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams:
+The cost is measured as forward differences between the pixels that become new neighbors. 
 <html>
 <body>
-<img src="misc/CostFE.png" width="350">
-<img src="misc/McostFE.png" width="350">
+<img src="misc/CostFE.png" width="500">
+</body>
+</html>
+We use these costs in a new accumulative cost matrix M to calculate the seams using dynamic programming. Here is the formula for vertical seams:
+<html>
+<body>
+<img src="misc/McostFE.png" width="400">
 </body>
 </html>
 
