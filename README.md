@@ -83,7 +83,8 @@ When we try to fit the image to a new size, the order of removing seams may matt
 
 ### 3. Image Enlarging
 We can also enlarge an image through seam carving. To achieve that purpose we need to calculate the seams that we are trying to remove first, then add these seams back to the original image. [img credit](https://raw.githubusercontent.com/vivianhylee/seam-carving/master/example/image6.jpg)
-
+<html>
+<body>
 <div class="image123">
     <div style="float:left;margin-right:5px;">
         <img src="Images/desert.jpg" height="200"/>
@@ -99,11 +100,11 @@ We can also enlarge an image through seam carving. To achieve that purpose we ne
     </div>
 </div>
 <div class="clear"></div>
+</body>
+</html>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of 3090aac... update
+
 ### 4. Content Amplification
 Sometimes we want to amplify certain contents of an image. We can first use standard scaling to enlarge the image and then apply seam carving on the larger image to carve the image back to its original size.
 
