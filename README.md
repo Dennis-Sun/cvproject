@@ -155,11 +155,9 @@ Here is an comparison between the original seam carving backward energy (middle)
 <html>
 <body>
 <div class="image">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/bench3.png"/>
-        <p style="text-align:left;">Original Input</p>
-    </div>
-</div>
+    <img src="Images/bench3.png" width="150" height="150">
+<figcaption>Fig10. Original Input</figcaption>
+</div> 
 <table class="image">
 <tr><td><img src="Images/bench_rmVseams_be.png" height="200"></td><td><img src="Images/bench_rmVseams2_fe.png" height="200"></td></tr>
 <tr><td><img src="Images/bench_rm_be.png" height="200"></td><td><img src="Images/bench_rm2_fe.png" height="200"></td></tr>
