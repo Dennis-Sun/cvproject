@@ -34,23 +34,6 @@ We adapt our major approach from [Avidan & Shamir 07](http://www.faculty.idc.ac.
 ### 1. Aspect ratio change
 We can successfully apply the algorithm to reduce the width of an image to a target size. Figure 1 shows the result of reducing the width of the image by 100 pixels.
 
-<div class="image123">
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/christmas_original.jpg" height="200" width="150"  />
-        <p style="text-align:left;">(a)Original Input</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/christmas_rm_100cols_Vseams.png" height="200" width="150" />
-        <p style="text-align:center;">(b)Original Input with vertial seams</p>
-    </div>
-    <div style="float:left;margin-right:5px;">
-        <img src="Images/christmas_rm_100cols.png" height="200" />
-        <p style="text-align:right;">(c)Seam Carving</p>
-    </div>
-    <div class="clear"></div>
-</div>
-
-
 <html>
 <body>
 <table class="image">
@@ -89,7 +72,7 @@ When we try to fit the image to a new size, the order of removing seams may matt
 <html>
 <body>
 <table class="image">
-<tr><td><img src="Images/charles_rm100rows_rm100cols.png"></td><td><img src="Images/charles_rm100cols_rm100rows.png"></td><td><img src="Images/charles_rm100rows_100cols_altern.png"></td><td><img src="Images/charles_optimal_100cols100rows.png"></td></tr>
+<tr><td><img src="Images/charles_rm100rows_rm100cols.png" width="200"></td><td><img src="Images/charles_rm100cols_rm100rows.png"></td><td><img src="Images/charles_rm100rows_100cols_altern.png"></td><td><img src="Images/charles_optimal_100cols100rows.png"></td></tr>
 <tr><td class="caption">(a) Remove horizontal seams first and then remove vertical seams</td><td class="caption">(b) Remove vertical seams first and then remove horizontal seams</td><td class="caption">(c) Alternate between horizontal and vertical seams</td><td class="caption">(d)Optimal order retargeting</td></tr>
 </table>
 
