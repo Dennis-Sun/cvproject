@@ -4,7 +4,6 @@ img = imread('~/Dropbox/CS766/Programs/dolphin.png');
 % img = imread('~/Dropbox/CS766/Programs/desert.jpg','jpg');
 % img = imread('~/Dropbox/CS766/Programs/Fuji.png');
 % img = imread('~/Dropbox/CS766/Programs/edo.png');
-addpath('~/Dropbox/CS766/Seam-Carving-Matlab-master/')
 
 % set parameters
 energyMethod = 0;           % energy function
